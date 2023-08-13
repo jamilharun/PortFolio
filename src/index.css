@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+/* Custom Color */
+/* Cyber easth */
+  --palatinate_Purple: #63345e;
+  --deap_Lilac: #ac61b9;
+  --light_steel_blue: #b7c1de;
+  --dark_cerulian: #0B468C;
+  --midnight_express: #092047;
+}
+
+@layer components{
+  .custom-section {
+    @apply w-screen h-screen;
+  }
+  /* rpofile card / landing page / main page / intHeader page */
+  .icons {
+    @apply w-5 h-5 text-cyber-easth-dark_cerulian ease-in hover:ease-out 
+    duration-200 hover:text-cyber-easth-midnight_express hover:w-6 hover:h-6
+  }
+  
+}
+
+@layer utilities{
+/* im only gonna use this if the class is not pat of the 
+    tailwind classes.  
+*/
+/* intHeader jsx */
+  .profile-card{
+    width: 400px;
+    height: 200px;
+  }
+
+/* Biography.jsx */
+  .bio{
+    /* width: 100%; */
+    /* height: 100%; */
+    display: none;
+    top: 10%;
+    left: 80%;
+    position: fixed;
+  }
+  
+  .modal {
+    position: absolute;
+    width: 500px;
+    top: 0%;
+    left: 0%;  
+    transform: translate(-50%, -50%);
+    background-color: var(--light_steel_blue);
+    border: var(--deap_Lilac) solid;
+    box-sizing: 0 0 10px 0 rgba(0,0,0,0.493);
+    border-radius: 15px;
+    padding: 20px;
+    
+  }
+  .modal span{
+    font-size: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    cursor: pointer;
+    text-align: center;
+  }
+}
