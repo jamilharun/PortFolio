@@ -8,6 +8,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      'Poppins': ['Poppins','sans-serif'],
+      'UnifrakturMaguntia': ['UnifrakturMaguntia','cursive'],
+      'Handjet': ['Handjet', 'cursive']
+    },
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
@@ -25,7 +30,15 @@ export default {
         'light_steel_blue': '#b7c1de',
         'dark_cerulian': '#0B468C',
         'midnight_express': '#092047',
-      }
+      },
+      'obsidian': {
+        'black': '#020202',
+        'jagger': '	#3d2856',
+        'tolopea': '#281f3f',
+        'jaguar': '#110d1d',
+        'black_russian': '#06030c'
+      },
+      
 
     },
     extend: {},

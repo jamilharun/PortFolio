@@ -9,9 +9,10 @@ function intHeader() {
     <section 
     // reminder add gradient animation
       className='custom-section bg-gradient-to-r from-cyber-easth-palatinate_Purple
-     via-cyber-easth-deap_Lilac  to-cyber-easth-light_steel_blue '>
-      <header className='main-header grid  place-items-center w-screen h-screen'>
-          <div className='profile-card flex p-4 bg-cyber-easth-light_steel_blue rounded-xl
+        via-cyber-easth-deap_Lilac  to-cyber-easth-light_steel_blue '>
+      <header className='main-header grid  place-items-center h-screen'>
+          <div 
+            className='profile-card flex p-4 bg-cyber-easth-light_steel_blue rounded-xl
            hover:shadow-cyber-easth-midnight_express shadow-lg ease-out hover:ease-in duration-300 
            border-cyber-easth-deap_Lilac border-4 border-double'
             onClick={openingBio}
@@ -41,10 +42,27 @@ function intHeader() {
 }
 
 
+
 function openingBio(){
   let bio = document.querySelector('.bio');
-  bio.style.display = "block"
-}
+  // var show = "block";
+  // var notshow = "none";
+  // var blank = "";
+  // blank = notshow;
+
+    // if (blank){
+      bio.style.display = "block"
+      // console.log("is block");
+    //   blank = show
+    // } else {
+    //   bio.style.display = "none"
+    //   bio.style.top = "0%"
+    //   bio.style.left = "0%"
+    //   console.log("is none");
+      
+    //   blank = notshow
+    // }  
+} 
 
 
 export default intHeader

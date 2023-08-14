@@ -6,15 +6,15 @@ const Biography = () => {
 
         // reminder: future jamil. di pa to final. gagawin mo pa itong Flipbook 
 
-        <div className="bio" >
+        <div className="bio">
             <div 
-                className="modal"
-                // onTouchStart={ts(event)}
-                // onTouchMove={tm(event)}
+                className="modal hover:shadow-sm hover:shadow-cyber-easth-midnight_express 
+                    hover:ease-in ease-out duration-200 hover:border-cyber-easth-palatinate_Purple
+                    place-items-center"
             >
             <span 
                 className="text-cyber-easth-midnight_express hover:text-cyber-easth-deap_Lilac 
-                    ease-out hover:ease-in duration-200 " 
+                    ease-out hover:ease-in duration-300 " 
                 onClick={closeBio}>&times;</span>
             <h3>Biography</h3>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing 
@@ -38,7 +38,7 @@ function closeBio(){
 
 // script for movable div
 // 2nd movable div code
-bio.addEventListener('mousedown', mousedown)
+bio?.addEventListener('mousedown', mousedown)
 
 function mousedown(e){
     window.addEventListener('mousemove', mousemove)
@@ -69,7 +69,6 @@ function mousedown(e){
   }
 }
 
-
 // 1st movable div code
 // function onDrag({movementX, movementY}){
 //     let getStyle = window.getComputedStyle(bio);
@@ -80,10 +79,11 @@ function mousedown(e){
 //     bio.style.top =  `${topValue + movementY}px`;
 // } 
 
-// if (bio){
-//     bio?.addEventListener('mousedown', ()=> { //Cannot read property ‘addEventListener’ of null
-//         modal.style.cursor = 'all-scroll';
-//         modal.addEventListener('mousemove', onDrag); 
+// if (bio){                                       //Cannot read property ‘addEventListener’ of null
+//     bio?.addEventListener('mousedown', ()=> {   //i still cant find the solution for this
+//         modal.style.cursor = 'all-scroll';      //sometimes its working sometimes its not.
+//         modal.addEventListener('mousemove', onDrag);
+        
 //     })
 //     document.addEventListener('mouseup', ()=> {
 //         modal.style.cursor = 'default';
