@@ -39,7 +39,39 @@
 /* header.jsx  */
   .name {
     font-size: 100px;
-    padding-top: 100px
+    padding-top: 200px;
+    line-height: 1;
+  }
+  .message{
+    font-size: 40px;
+    line-height: 1;
+  }
+  .highligh{
+    font-size: 120px;
+  }
+  
+
+  .icons1{
+    position:absolute;
+    top: 170px;
+    right: 300px;
+    width: 350px;
+    height: 350px;
+  }
+  .icons2{
+    position:absolute;
+    top: 200px;
+    right: 10px;
+    width: 350px;
+    height: 450px;
+  }
+
+  .icons3 {
+    position: absolute;
+    top: 10px;
+    right: 150px;
+    width: 350px;
+    height: 450px;
   }
 /* im only gonna use this if the class is not pat of the 
     tailwind classes.  
